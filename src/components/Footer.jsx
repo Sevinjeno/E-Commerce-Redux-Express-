@@ -7,10 +7,10 @@ import {
     Pinterest,
     Room,
     Twitter,
-  } from "@material-ui/icons";
+  } from "@mui/icons-material";
   import styled from "styled-components";
   import { mobile } from "../responsive";
-  
+
   const Container = styled.div`
     display: flex;
     ${mobile({ flexDirection: "column" })}
@@ -69,11 +69,11 @@ import {
   `;
   
   const Right = styled.div`
-    flex: 1;
-    padding: 20px;
-    ${mobile({ backgroundColor: "#fff8f8" })}
-  
-  `;
+  flex: 1;
+  padding: 20px;
+  ${mobile({ backgroundColor: "#fff8f8" })}
+
+`;
   
   const ContactItem = styled.div`
     margin-bottom: 20px;
@@ -89,7 +89,7 @@ import {
     return (
       <Container>
         <Left>
-          <Logo>LAMA.</Logo>
+          <Logo>7Jeno.</Logo>
           <Desc>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
