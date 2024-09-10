@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
@@ -12,6 +12,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${mobile({ height: "20vh" })}
 
 `;
 
@@ -41,19 +42,16 @@ const Button = styled.button`
     font-weight: 600;
 `;
 
-const CategoryItem = (obj) => {
+const CategoryItem = ({ item }) => {
   return (
     <Container>
-        <Image src={obj.item.img} />
-        <Info>
-            <Title>
-            {obj.item.title}
-            </Title>
-                <Button>Shop Now</Button>
-        </Info>
+      <Image src={item.img} />
+      <Info>
+        <Title>{item.title}</Title>
+        <Button>SHOP NOW</Button>
+      </Info>
     </Container>
-  )
-}
+  );
+};
 
-
-export default CategoryItem
+export default CategoryItem;
